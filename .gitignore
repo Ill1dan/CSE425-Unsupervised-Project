@@ -1,1 +1,13 @@
-data/
+# Ignore raw datasets only
+data/audio/
+data/lyrics/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
