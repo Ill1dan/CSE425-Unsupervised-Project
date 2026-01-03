@@ -1,6 +1,10 @@
 # Ignore raw datasets only
 data/audio/
 data/lyrics/
+data/processed/
+
+# Ignore virtual environment
+.venv/
 
 # Python
 __pycache__/
