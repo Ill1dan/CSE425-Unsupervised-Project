@@ -1,5 +1,0 @@
-method,features,pca_dim,k,silhouette,calinski_harabasz,pca_explained_var_sum
-baseline_kmeans,features_mfcc_flat,64,2,0.2208990603685379,22.16364601610296,0.6936287879943848
-baseline_kmeans,features_mfcc_flat,64,2,0.2208990603685379,22.16364601610296,0.6936287879943848
-baseline_kmeans,features_mfcc_flat,64,2,0.2208990603685379,22.16364601610296,0.6936287879943848
-baseline_kmeans,features_mfcc_flat,64,2,0.2208990603685379,22.16364601610296,0.6936287879943848

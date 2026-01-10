@@ -52,7 +52,7 @@ def plot_2d(Z, labels, out_path, title):
 
 
 
-def run_baseline(features_dir="data/features_mfcc_flat", results_dir="results", pca_dim=64, k=2, seed=42):
+def run_baseline(features_dir="data/features_mfcc_flat", results_dir="results/baseline", pca_dim=64, k=2, seed=42):
     ensure_dir(results_dir)
     vis_dir = os.path.join(results_dir, "latent_visualization")
     ensure_dir(vis_dir)
@@ -108,10 +108,9 @@ def run_baseline(features_dir="data/features_mfcc_flat", results_dir="results", 
 
 
 if __name__ == "__main__":
-    # Must-have baseline run
-    run_baseline(features_dir="data/features_mfcc_flat", pca_dim=64, k=2)
-
-    # Optional experiments (uncomment if you want)
-    # run_baseline("data/features_mfcc_flat", pca_dim=32, k=2)
-    # run_baseline("data/features_mfcc_flat", pca_dim=64, k=3)
-    # run_baseline("data/features_mel", pca_dim=64, k=2)
+    run_baseline(
+        features_dir="data/features_mfcc_flat",
+        results_dir="results/baseline",
+        pca_dim=64,
+        k=2
+    )
