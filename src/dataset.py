@@ -315,6 +315,26 @@ def export_features(
     return feats.shape
 
 
+# -----------------------------
+# Loader for exported features
+# -----------------------------
+
+
+def load_feature_pack(feature_dir):
+    features_path = os.path.join(feature_dir, "features.npy")
+    ids_path = os.path.join(feature_dir, "ids.npy")
+    langs_path = os.path.join(feature_dir, "languages.npy")
+
+    X = np.load(features_path)
+    ids = np.load(ids_path, allow_pickle=True)
+    langs = np.load(langs_path, allow_pickle=True)
+
+    if len(X.shape) != 2:
+        X = X.reshape(X.shape[0], -1)
+
+    return X, ids, langs
+
+
 def main():
     # You can run:
     #   python -m src.dataset
