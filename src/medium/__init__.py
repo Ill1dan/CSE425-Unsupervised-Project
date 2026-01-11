@@ -1,5 +1,5 @@
 """
-Medium task (Phase 5):
+Medium task:
 - CNN-VAE on mel spectrograms
 - Extract latent mu
 - Cluster with KMeans, Agglomerative, DBSCAN
