@@ -4,5 +4,11 @@ soundfile
 ipykernel
 scikit-learn
 matplotlib
+pandas
 torch
+torchvision
+torchaudio
+torch
+torchvision
+torchaudio
 pandas
